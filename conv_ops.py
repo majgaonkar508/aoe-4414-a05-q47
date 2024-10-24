@@ -27,7 +27,6 @@
 # import Python modules
 import sys # argv
 
-
 # initialize script arguments
 c_in = float('nan')   
 h_in = float('nan')   
@@ -60,10 +59,10 @@ else:
 c_out = n_filt
 
 # calculate height of output map
-h_out = (h_in + 2*p-h_filt)/s + 1 
+h_out = (h_in + 2*p - h_filt)/s + 1 
 
 # calculate width of output map
-w_out = (w_in+2*p-w_filt)/s + 1 
+w_out = (w_in+2*p - w_filt)/s + 1 
 
 # calculate number of additions, multiplications, and divisions
 adds = n_filt*h_out*w_out*c_in*h_filt*w_filt
